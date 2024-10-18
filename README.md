@@ -20,6 +20,8 @@ If you have already downloaded the extensions wallet, check if the extensions wa
 
 ### Fractal Bitcoin
 
+<br/><br/>
+
 #### connect
 
 `safnectwallet.fractalBitcoin.connect();`
@@ -40,6 +42,8 @@ address - string: The current account's address
 
 publicKey - string: The public key of the current account
 
+<br/><br/>
+
 #### requestAccounts
 
 `safnectwallet.fractalBitcoin.requestAccounts();`
@@ -59,6 +63,8 @@ Promise - object
 address - string: The current account's address
 
 publicKey - string: The public key of the current account
+
+<br/><br/>
 
 #### getBalance
 
@@ -94,6 +100,7 @@ Promise - object
     }
 }
 ```
+<br/><br/>
 
 #### getCat20Balance
 
@@ -110,6 +117,8 @@ tokenId - Cat-20 Token ID
 Return Value
 
 Promise - Number
+
+<br/><br/>
 
 #### send
 
@@ -132,6 +141,8 @@ Promise - Object
 success - Send result true | false
 
 txid - Transaction ID
+
+<br/><br/>
 
 #### sendCat20
 
@@ -156,6 +167,8 @@ Promise - Object
 success - Send result true | false
 
 txid - Transaction ID
+
+<br/><br/>
 
 #### signPsbts
 
