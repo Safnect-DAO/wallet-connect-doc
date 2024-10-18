@@ -26,15 +26,15 @@ If you have already downloaded the extensions wallet, check if the extensions wa
 
 `safnectwallet.fractalBitcoin.connect();`
 
-Description
+***Description***
 
 Connecting to the Fractal Bitcoin network of safnect wallet
 
-Parameters
+***Parameters***
 
 None
 
-Return Value
+***Return Value***
 
 Promise - object
 
@@ -48,15 +48,15 @@ publicKey - string: The public key of the current account
 
 `safnectwallet.fractalBitcoin.requestAccounts();`
 
-Description
+***Description***
 
 Requests to connect the current account
 
-Parameters
+***Parameters***
 
 None
 
-Return Value
+***Return Value***
 
 Promise - object
 
@@ -70,15 +70,15 @@ publicKey - string: The public key of the current account
 
 `safnectwallet.fractalBitcoin.getBalance();`
 
-Description
+***Description***
 
 Get the FB coin balance of the wallet address
 
-Parameters
+***Parameters***
 
 None
 
-Return Value
+***Return Value***
 
 Promise - object
 
@@ -106,15 +106,15 @@ Promise - object
 
 `safnectwallet.fractalBitcoin.getCat20Balance(tokenId);`
 
-Description
+***Description***
 
 Get the Cat-20 token balance of the wallet address
 
-Parameters
+***Parameters***
 
 tokenId - Cat-20 Token ID
 
-Return Value
+***Return Value***
 
 Promise - Number
 
@@ -124,17 +124,17 @@ Promise - Number
 
 `safnectwallet.fractalBitcoin.send(receiverAddress, amount);`
 
-Description
+***Description***
 
 Send FB to `receiverAddress`
 
-Parameters
+***Parameters***
 
 receiverAddress - Receiver Address
 
 amount - Number of satoshi
 
-Return Value
+***Return Value***
 
 Promise - Object
 
@@ -148,11 +148,11 @@ txid - Transaction ID
 
 `safnectwallet.fractalBitcoin.sendCat20(tokenId, receiverAddress, amount);`
 
-Description
+***Description***
 
 Send Cat-20 token to `receiverAddress`
 
-Parameters
+***Parameters***
 
 tokenId - Cat-20 Token ID
 
@@ -160,7 +160,7 @@ receiverAddress - Receiver Address
 
 amount - Number of token
 
-Return Value
+***Return Value***
 
 Promise - Object
 
@@ -174,17 +174,17 @@ txid - Transaction ID
 
 `safnectwallet.fractalBitcoin.signPsbts(psbts, toSignInputs);`
 
-Description
+***Description***
 
 Sign some psbt transactions
 
-Parameters
+***Parameters***
 
 psbts - string[]: The hexadecimal strings of the PSBTs to be signed.
 
 toSignInputs - To sign inputs
 
-Return Value
+***Return Value***
 
 Promise - string[]: The hexadecimal strings of the signed PSBTs.
 
