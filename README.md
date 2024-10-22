@@ -219,6 +219,8 @@ data = {
 
 Promise - string[]: The hexadecimal strings of the signed PSBTs.
 
+<br/><br/>
+
 #### signMessage
 
 `safnectwallet.fractalBitcoin.signMessage(signStr);`
