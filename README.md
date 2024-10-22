@@ -172,7 +172,7 @@ txid - Transaction ID
 
 #### signPsbts
 
-`safnectwallet.fractalBitcoin.signPsbts(psbts, toSignInputs);`
+`safnectwallet.fractalBitcoin.signPsbts(data);`
 
 ***Description***
 
@@ -180,12 +180,57 @@ Sign some psbt transactions
 
 ***Parameters***
 
-psbts - string[]: The hexadecimal strings of the PSBTs to be signed.
-
-toSignInputs - To sign inputs
-
+data - Object: The hexadecimal strings of the PSBTs to be signed.
+```
+data = {
+   "psbts": [
+       "70736274ff0100d702000000018bcbd712d7...",
+       "70736274ff0100fd52010200000004bddae1..."
+   ],
+   "toSignInputs": [
+       [
+           {
+               "index": 0,
+               "address": "bc1pzd3qdryjwcpx5sd5a8msf6xaskq0sedc6ud8tl0ruqdmwd7kqmwsadwdh4",
+               "disableTweakSigner": false
+           }
+       ],
+       [
+           {
+               "index": 0,
+               "address": "bc1pzd3qdryjwcpx5sd5a8msf6xaskq0sedc6ud8tl0ruqdmwd7kqmwsadwdh4",
+               "disableTweakSigner": false
+           },
+           {
+               "index": 2,
+               "address": "bc1pzd3qdryjwcpx5sd5a8msf6xaskq0sedc6ud8tl0ruqdmwd7kqmwsadwdh4",
+               "disableTweakSigner": false
+           },
+           {
+               "index": 3,
+               "address": "bc1pzd3qdryjwcpx5sd5a8msf6xaskq0sedc6ud8tl0ruqdmwd7kqmwsadwdh4",
+               "disableTweakSigner": false
+           }
+       ]
+   ]
+}
+```
 ***Return Value***
 
 Promise - string[]: The hexadecimal strings of the signed PSBTs.
 
+#### signMessage
 
+`safnectwallet.fractalBitcoin.signMessage(signStr);`
+
+***Description***
+
+Signs a message with "ecdsa" signing algorithm
+
+***Parameters***
+
+signStr - string: The data to be signed
+
+***Return Value***
+
+Promise - string: Signed result
