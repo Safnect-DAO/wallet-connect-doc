@@ -172,7 +172,7 @@ txid - Transaction ID
 
 #### signPsbts
 
-`safnectwallet.fractalBitcoin.signPsbts(data);`
+`safnectwallet.fractalBitcoin.signPsbts(data, isExtract);`
 
 ***Description***
 
@@ -181,6 +181,9 @@ Sign some psbt transactions
 ***Parameters***
 
 data - Object: The hexadecimal strings of the PSBTs to be signed.
+
+isExtract - Number: 1 yes or 0 no. Whether to extract the signature data in PSBT, When the value is 0, the original psbt data is returned.
+
 ```
 data = {
    "psbts": [
@@ -217,7 +220,7 @@ data = {
 ```
 ***Return Value***
 
-Promise - string[]: The hexadecimal strings of the signed PSBTs.
+Promise - string[]: The hexadecimal strings of the signed PSBTs. (When the value is 0, the original psbt data is returned)
 
 <br/><br/>
 
