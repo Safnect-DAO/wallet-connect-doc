@@ -170,9 +170,30 @@ txid - Transaction ID
 
 <br/><br/>
 
+#### signPsbt
+
+`safnectwallet.fractalBitcoin.signPsbt(psbtHex);`
+
+***Description***
+
+Sign some psbt transactions
+
+***Parameters***
+
+psbtHex - Object: The hexadecimal strings of the PSBT to be signed.
+
+```
+psbtHex = "70736274ff0100f4020000000300000000000000000000000000000000000000000000000000000000000000000000000000ffffffff00000000000000000000000000000000000000000000000000000000000000000100000000fffffffff78cca7dd09be76fe61e00bea31b5711a18e7a6c784e47130a4ee9e568b902740000000000ffffffff0300000000000000001976a914000000000000000000000000000000000000000088ac00000000000000001976a914000000000000000000000000000000000000000088acbc6b9f06000000002251202ab40cb34d63f8d6c83dad5221701893ff5432fce4ed9ffed09e7cc876c5c2a3000000000001011f0000000000000000160014ae47938f7acd1623e6e10e1ebcc33c2a7cb6e30d0001011f0000000000000000160014ae47938f7acd1623e6e10e1ebcc33c2a7cb6e30d0001012b22020000000000002251202ab40cb34d63f8d6c83dad5221701893ff5432fce4ed9ffed09e7cc876c5c2a301030483000000011720e84964089e843405d1b98ce76f61f376787860e452bc33d83da859f04ecb14db00000000"
+```
+***Return Value***
+
+Promise - string: The hexadecimal strings of the signed PSBT.
+
+<br/><br/>
+
 #### signPsbts
 
-`safnectwallet.fractalBitcoin.signPsbts(data, isExtract);`
+`safnectwallet.fractalBitcoin.signPsbts(data);`
 
 ***Description***
 
@@ -181,8 +202,6 @@ Sign some psbt transactions
 ***Parameters***
 
 data - Object: The hexadecimal strings of the PSBTs to be signed.
-
-isExtract - Number: 1 yes or 0 no. Whether to extract the signature data in PSBT, When the value is 0, the original psbt data is returned.
 
 ```
 data = {
@@ -220,7 +239,7 @@ data = {
 ```
 ***Return Value***
 
-Promise - string[]: The hexadecimal strings of the signed PSBTs. (When the value is 0, the original psbt data is returned)
+Promise - string[]: The hexadecimal strings of the signed PSBTs. 
 
 <br/><br/>
 
