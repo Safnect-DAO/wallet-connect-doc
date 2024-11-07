@@ -1,5 +1,7 @@
 # Safnect Wallet Connect
 
+visit [Documentation](https://safnect-dao.github.io/wallet-connect-doc/introduction) for more detail
+
 ## Introduction
 
 In a DApp, adding a "Connect Safnect Wallet" button allows interaction with the Safnect Wallet, such as obtaining addresses, prompting wallet signatures, and more.
