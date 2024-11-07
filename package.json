@@ -1,0 +1,21 @@
+{
+  "name": "wallet-connect-doc",
+  "version": "1.0.0",
+  "description": "Connect Safnect wallet API document",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Safnect-DAO/wallet-connect-doc.git"
+  },
+  "keywords": [
+    "Safnect Wallet",
+    "WalletConnect"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Safnect-DAO/wallet-connect-doc/issues"
+  },
+  "homepage": "https://github.com/Safnect-DAO/wallet-connect-doc#readme",
+  "devDependencies": {
+    "vitepress": "^1.5.0"
+  }
+}
