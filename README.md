@@ -134,7 +134,7 @@ Send FB to `receiverAddress`
 
 receiverAddress - Receiver Address
 
-amount - Number of satoshi
+amount - Number of FB
 
 ***Return Value***
 
